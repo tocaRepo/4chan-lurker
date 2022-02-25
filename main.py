@@ -8,6 +8,8 @@ def gen_chan():
     for idx, page in enumerate(r):
         for thread in r[idx]['threads']:
             yield thread
+
+
 def get_threads(key: str, default='NaN'):
     return threads.get(key, default)
 
